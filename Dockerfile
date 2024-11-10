@@ -11,3 +11,4 @@ ENV PATH="/root/.local/share/pypoetry/venv/bin:${PATH}"
 RUN poetry config virtualenvs.create false
 RUN pip3 install torch==2.5.1 torchaudio==2.5.1 --index-url  https://download.pytorch.org/whl/cpu --no-cache-dir
 RUN pip3 install triton==3.1.0 --no-cache-dir
+RUN pip3 install numpy==2.0.2 llvmlite==0.43.0 --no-cache-dir
